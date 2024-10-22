@@ -6,6 +6,7 @@ This model is a fine-tuned version of microsoft/speecht5_tts on an "erenfazliogl
 should probably proofread and complete it, then remove this comment. -->
 
 # Turkish Fine-tuned SpeechT5 TTS Model Report
+![image](https://github.com/user-attachments/assets/73bca448-a8b4-4dba-bc8e-c28a74095737)
 
 ## Introduction
 Text-to-Speech (TTS) synthesis has become an increasingly important technology in our digital world, enabling applications ranging from accessibility tools to virtual assistants. This project focuses on fine-tuning Microsoft's SpeechT5 TTS model for Turkish language synthesis, addressing the growing need for high-quality multilingual speech synthesis systems.
@@ -22,6 +23,26 @@ https://huggingface.co/spaces/Omarrran/turkish_finetuned_speecht5_tts
 - Public transportation announcements and navigation systems
 - Content creation and media localization
 
+### usage
+
+
+```
+# Use a pipeline as a high-level helper
+from transformers import pipeline
+
+pipe = pipeline("text-to-audio", model="Omarrran/english_speecht5_finetuned")
+
+```
+
+OR
+```
+
+# Load model directly
+from transformers import AutoProcessor, AutoModelForTextToSpectrogram
+
+processor = AutoProcessor.from_pretrained("Omarrran/turkish_finetuned_speecht5_tts")
+model = AutoModelForTextToSpectrogram.from_pretrained("Omarrran/turkish_finetuned_speecht5_tts")
+```
 ## Methodology
 
 ### Model Selection
