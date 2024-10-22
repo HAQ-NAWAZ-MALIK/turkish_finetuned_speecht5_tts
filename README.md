@@ -2,19 +2,6 @@
 This model is a fine-tuned version of microsoft/speecht5_tts on an "erenfazlioglu/turkishvoicedataset"  dataset. 
 
 
-
-
----
-library_name: transformers
-license: mit
-base_model: microsoft/speecht5_tts
-tags:
-- generated_from_trainer
-model-index:
-- name: turkish_finetuned_speecht5_tts
-  results: []
----
-
 <!-- This model card has been generated automatically according to the information the Trainer had access to. You
 should probably proofread and complete it, then remove this comment. -->
 
@@ -22,8 +9,10 @@ should probably proofread and complete it, then remove this comment. -->
 
 ## Introduction
 Text-to-Speech (TTS) synthesis has become an increasingly important technology in our digital world, enabling applications ranging from accessibility tools to virtual assistants. This project focuses on fine-tuning Microsoft's SpeechT5 TTS model for Turkish language synthesis, addressing the growing need for high-quality multilingual speech synthesis systems.
-## DEMO 
 
+## Model Link 
+https://huggingface.co/Omarrran/turkish_finetuned_speecht5_tts/
+## DEMO on spaces
 https://huggingface.co/spaces/Omarrran/turkish_finetuned_speecht5_tts
 
 ### Key Applications:
